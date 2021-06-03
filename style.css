@@ -62,16 +62,60 @@
     width: 500px;
 }
 
-.ex-9-img {
+.ex-6-img:hover{
+    filter: grayscale(100%);
+}
+
+.ex-7-img{
+    transition: filter 2s;
+}
+
+.ex-7-img:hover{
+    filter: grayscale(60%);
+    filter:sepia(50%)
+}
+
+.ex-8-img{
+    transition: filter 2s, border-radius 2s;
+}
+
+.ex-8-img:hover{
+    filter: grayscale(60%);
+    filter: sepia(50%);
+    border-radius: 15px;
+}
+
+.ex-9-img{
     margin: 50px 100px;
     width: 400px;
+    transition: filter 2s, transform 2s, border-radius 2s;
 }
+
+.ex-9-img:hover{
+    filter: grayscale(60%);
+    filter: sepia(50%);
+    transform: scale(2);
+    border-radius: 15px;
+}
+
 .ex-10-icon {
     font-size: 60px;
+    animation: giraaa 1s linear infinite;
 }
+
+@keyframes  giraaa {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
 .ex-11-icon {
     font-size: 60px;
 }
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
